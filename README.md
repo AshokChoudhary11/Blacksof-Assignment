@@ -56,7 +56,7 @@ npm run preview
 
 ## 🚀 Deployment Link
 You can access the deployed application here:
-[Deployment Link]()
+[Deployment Link](https://blacksof-assignment-gamma.vercel.app/)
 
 
 Happy coding! 🚀

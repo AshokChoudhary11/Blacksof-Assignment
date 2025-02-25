@@ -7,7 +7,7 @@ import Intro from './components/Intro'
 import Navbar from './components/navbar'
 
 function App() {
-  const contactFormRef = useRef<HTMLDivElement>(null);
+  const contactFormRef = useRef<HTMLDivElement>(null!);
 
   return (
     <>

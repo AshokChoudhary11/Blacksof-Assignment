@@ -33,6 +33,15 @@ const Hero = () => {
         { image: CommercialCabin, name: "Cabin", video: Cabin },
     ];
     const currentData = selectedCategory === "passenger" ? passengerAlfa : CommercialAlfa;
+    
+    const handleImageClick = (index: number, video: string) => {
+        setSelectedImage(index);
+        setVideoSrc(video);
+        if (videoRef.current) {
+            videoRef.current.src = video;
+            videoRef.current.play();
+        }
+    };
 
     useEffect(() => {
         setVideoSrc(currentData);

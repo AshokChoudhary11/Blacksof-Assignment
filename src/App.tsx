@@ -1,3 +1,4 @@
+import { useRef } from "react";
 import './App.css'
 import ContactForm from './components/contactForm'
 import Footer from './components/footer'
@@ -6,13 +7,16 @@ import Intro from './components/Intro'
 import Navbar from './components/navbar'
 
 function App() {
+  const contactFormRef = useRef<HTMLDivElement>(null);
 
   return (
     <>
-      <Navbar />
+      <Navbar contactFormRef={contactFormRef} />
       <Intro />
       <Hero />
-      <ContactForm />
+      <div ref={contactFormRef}>
+        <ContactForm />
+      </div>
       <Footer />
     </>
   )

@@ -26,7 +26,7 @@ const ContactForm: React.FC = () => {
         <input type="email" placeholder="Email" className="w-full bg-transparent border-b border-white py-2 text-white outline-none" />
         <input type="text" placeholder="Company" className="w-full bg-transparent border-b border-white py-2 text-white outline-none" />
         <textarea placeholder="Message" className="w-full bg-transparent border-b border-white py-2 text-white outline-none resize-none" rows={3}></textarea>
-        <button className="mt-4 px-6 py-2 border border-white rounded-full text-white hover:bg-white hover:text-blue-700 transition">
+        <button className="mt-4 px-6 py-2 border bg-white text-black border-white rounded-full hover:bg-white hover:text-blue-700 transition">
           Send
         </button>
       </form>
